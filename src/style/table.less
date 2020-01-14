@@ -1,0 +1,104 @@
+.tableHeader{
+  text-align: right;
+  .searchContainer {
+    border-radius:4px;
+    border:1px solid rgba(191,197,210,1);
+    height: 32px;
+    display: inline-block;
+    background-color: #fff;
+    vertical-align: top;
+    input, input:focus {
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      vertical-align: top;
+      border: none;
+      box-shadow: none;
+    }
+    :global {
+      .ant-form-item {
+        .ant-form-item-control {
+          line-height: 32px;
+        }
+        .ant-form-item-label {
+          display: none;
+        }
+      }
+    }
+  }
+  .btnContainer {
+    display: inline-block;
+    :global {
+      .ant-btn {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+:global {
+  .common-table {
+    background: #fff;
+    margin-top: 14px;
+    box-shadow: 0px 6px 12px 1px rgba(149,161,183,0.2);
+    border-radius: 4px;
+    padding: 0 14px 8px 14px;
+    .ant-table {
+      min-height: 532px;
+      .ant-table-thead {
+        tr > th {
+          background-color: #fff;
+          border-bottom: 1px solid rgba(232, 235, 240, 1);
+          font-size:14px;
+          font-family:PingFangSC-Semibold,PingFang SC;
+          font-weight:600;
+          color:rgba(173,182,194,1);
+          padding: 15px 16px;
+        }
+      }
+      .ant-table-tbody {
+        tr > td {
+          background-color: #fff;
+          border-bottom: 1px solid rgba(232, 235, 240, 1);
+          font-size:14px;
+          font-family:PingFangSC-Regular,PingFang SC;
+          font-weight:400;
+          color:rgba(58,66,92,1);
+          padding: 13px 16px;
+        }
+      }
+      .ant-table-placeholder .ant-empty-normal {
+        margin: 226px 0;
+      }
+    }
+    .ant-table-pagination.ant-pagination {
+      margin: 12px 0 14px 0;
+      .ant-pagination-prev { }
+      .ant-pagination-item {
+        a {
+          font-weight:400;
+        }
+      }
+      .ant-pagination-item-active {
+        background-color: @primary-color;
+        a {
+          color: #fff;
+        }
+      }
+      .ant-pagination-next { }
+      .ant-pagination-options-size-changer .ant-select-selection--single {
+        border-radius:4px;
+        border:1px solid rgba(232,235,240,1);
+      }
+      .ant-pagination-options-quick-jumper {
+        input {
+          border-radius:4px;
+          border:1px solid rgba(232,235,240,1);
+        }
+      }
+      .ant-pagination-options-size-changer .ant-select-selection--single:focus,
+      .ant-pagination-options-quick-jumper input:focus  {
+        box-shadow: none;
+      }
+    }
+  }
+}

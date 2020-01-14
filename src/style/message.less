@@ -1,0 +1,63 @@
+//message
+:global {
+  .ant-notification {
+    .messageSuccess, .messageError, .messageWarning {
+      padding: 10px 24px;
+      .ant-notification-notice-content {
+        margin-left: 24px;
+        .ant-notification-notice-description {
+          font-weight:400;
+          color:rgba(23,43,77,1);
+        }
+      }
+      .ant-notification-notice-message, .ant-notification-notice-close {
+        display: none;
+      }
+    }
+    .messageSuccess:before {
+      content: " ";
+      display: block;
+      background-color: @primary-color;
+      background-image: url("../assets/img/message_success.png");
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position-y: calc(50% - 2px);
+      background-position-x: 8px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 41px;
+      height: 100%;
+    }
+    .messageError:before {
+      content: " ";
+      display: block;
+      background-color: @error-color;
+      background-image: url("../assets/img/message_error.png");
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position-y: calc(50% - 2px);
+      background-position-x: 8px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 41px;
+      height: 100%;
+    }
+    .messageWarning:before {
+      content: " ";
+      display: block;
+      background-color: @warning-color;
+      background-image: url("../assets/img/message_warning.png");
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position-y: calc(50% - 2px);
+      background-position-x: 8px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 41px;
+      height: 100%;
+    }
+  }
+}

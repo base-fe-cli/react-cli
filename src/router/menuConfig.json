@@ -1,0 +1,260 @@
+[
+	{
+		"id": 1,
+		"menuName": "知识门户",
+		"menuUrl": "/portal",
+		"menuIcon": "home",
+		"menuKey": "portal",
+		"menuType": "page",
+		"menuOrder": 1
+	},
+	{
+		"id": 3,
+		"menuName": "知识维护",
+		"menuUrl": "/maintain",
+		"menuKey": "maintain",
+		"menuIcon": "appstore",
+		"menuType": "folder",
+		"menuOrder": 3,
+		"children": [
+			{
+				"id": 31,
+				"menuName": "类目",
+				"menuUrl": "/maintain/categoryManage",
+				"menuKey": "categoryManage",
+				"parentIcon": "pie-chart",
+				"menuType": "page",
+				"menuOrder": 1
+			},{
+				"id": 32,
+				"menuName": "知识",
+				"menuUrl": "/maintain/createKnowledge",
+				"menuKey": "createKnowledge",
+				"parentIcon": "pie-chart",
+				"menuType": "page",
+				"menuOrder": 1,
+				"children": [
+					{
+						"id": 320,
+						"menuName": "创建知识（新建&导入）",
+						"menuUrl": "/maintain/createKnowledge/create",
+						"menuKey": "createKnowledge",
+						"parentIcon": "",
+						"menuType": "button",
+						"disabled": true,
+						"menuOrder": 1
+					},{
+						"id": 321,
+						"menuName": "导出",
+						"menuUrl": "/maintain/createKnowledge/export",
+						"menuKey": "exportKnowledge",
+						"parentIcon": "",
+						"menuType": "button",
+						"disabled": false,
+						"menuOrder": 2
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 4,
+		"menuName": "待办事项",
+		"menuUrl": "/todo",
+		"menuKey": "todo",
+		"menuIcon": "exception",
+		"menuType": "folder",
+		"menuOrder": 4,
+		"children": [
+			{
+				"id": 41,
+				"menuName": "待审批",
+				"menuUrl": "/todo/unApproval",
+				"menuKey": "unApproval",
+				"menuType": "page",
+				"menuOrder": 1
+			},
+			{
+				"id": 42,
+				"menuName": "待签读",
+				"menuUrl": "/todo/unRead",
+				"menuKey": "unRead",
+				"menuType": "page",
+				"menuOrder": 2
+			}
+		]
+	},
+	{
+		"id": 5,
+		"menuName": "已办事项",
+		"menuUrl": "/done",
+		"menuKey": "done",
+		"menuIcon": "exception",
+		"menuType": "folder",
+		"menuOrder": 4,
+		"children": [
+			{
+				"id": 51,
+				"menuName": "已审批",
+				"menuUrl": "/done/approved",
+				"menuKey": "approved",
+				"menuType": "page",
+				"menuOrder": 1
+			},
+			{
+				"id": 52,
+				"menuName": "已签读",
+				"menuUrl": "/done/read",
+				"menuKey": "read",
+				"menuType": "page",
+				"menuOrder": 2
+			}
+		]
+	},
+	{
+		"id": 7,
+		"menuName": "系统管理",
+		"menuUrl": "/setting",
+		"menuKey": "setting",
+		"menuIcon": "setting",
+		"menuType": "folder",
+		"menuOrder": 7,
+		"children": [
+			{
+				"id": 71,
+				"menuName": "角色管理",
+				"menuUrl": "/setting/roleSetting",
+				"menuKey": "roleSetting",
+				"menuType": "page",
+				"menuOrder": 1
+			},
+			{
+				"id": 72,
+				"menuName": "用户管理",
+				"menuUrl": "/setting/userSetting",
+				"menuKey": "userSetting",
+				"menuType": "page",
+				"menuOrder": 2
+			},
+			{
+				"id": 73,
+				"menuName": "公告管理",
+				"menuUrl": "/notice",
+				"menuKey": "noticeSetting",
+				"menuType": "page",
+				"menuOrder": 2,
+				"children": [
+					{
+						"id": 730,
+						"menuName": "查看",
+						"menuUrl": "/notice/preview",
+						"menuKey": "noticePreview",
+						"parentIcon": "",
+						"menuType": "button",
+						"disabled": true,
+						"menuOrder": 1
+					},{
+						"id": 731,
+						"menuName": "维护",
+						"menuUrl": "/notice/maintain",
+						"menuKey": "noticeMaintain",
+						"parentIcon": "",
+						"menuType": "button",
+						"disabled": false,
+						"menuOrder": 2
+					}
+				]
+			},
+			{
+				"id": 74,
+				"menuName": "知识维护日志",
+				"menuUrl": "/setting/maintainHistory",
+				"menuKey": "maintainHistory",
+				"menuType": "page",
+				"menuOrder": 3,
+				"children": [
+					{
+						"id": 740,
+						"menuName": "查看",
+						"menuUrl": "/setting/maintainHistory/preview",
+						"menuKey": "historyPreview",
+						"parentIcon": "",
+						"menuType": "button",
+						"disabled": true,
+						"menuOrder": 1
+					},{
+						"id": 741,
+						"menuName": "维护",
+						"menuUrl": "/setting/maintainHistory/maintain",
+						"menuKey": "historyMaintain",
+						"parentIcon": "",
+						"menuType": "button",
+						"disabled": false,
+						"menuOrder": 2
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 8,
+		"menuName": "回收站",
+		"menuUrl": "/recycleBin",
+		"menuKey": "recycleBin",
+		"menuIcon": "form",
+		"menuType": "other",
+		"menuOrder": 8,
+		"children": [
+			{
+				"id": 80,
+				"menuName": "查看",
+				"menuUrl": "/recycleBin/preview",
+				"menuKey": "recycleBinPreview",
+				"parentIcon": "",
+				"menuType": "button",
+				"disabled": true,
+				"menuOrder": 1
+			},{
+				"id": 81,
+				"menuName": "维护",
+				"menuUrl": "/recycleBin/maintain",
+				"menuKey": "recycleBinMaintain",
+				"parentIcon": "",
+				"menuType": "button",
+				"disabled": false,
+				"menuOrder": 2
+			}
+		]
+	},
+	{
+		"id": 9,
+		"menuName": "帮助中心",
+		"menuUrl": "/help",
+		"menuKey": "help",
+		"menuIcon": "form",
+		"menuType": "other",
+		"menuOrder": 9,
+		"children": [
+			{
+				"id": 90,
+				"menuName": "查看",
+				"menuUrl": "/help/preview",
+				"menuKey": "helpPreview",
+				"parentIcon": "",
+				"menuType": "button",
+				"disabled": true,
+				"menuOrder": 1
+			},{
+				"id": 91,
+				"menuName": "维护",
+				"menuUrl": "/help/maintain",
+				"menuKey": "helpMaintain",
+				"parentIcon": "",
+				"menuType": "button",
+				"disabled": false,
+				"menuOrder": 2
+			}
+		]
+	}
+]
+

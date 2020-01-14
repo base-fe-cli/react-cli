@@ -1,0 +1,33 @@
+:global{
+  .ant-pagination {
+    text-align: right;
+    margin: 12px 0 14px 0;
+    .ant-pagination-prev { }
+    .ant-pagination-item {
+      a {
+        font-weight:400;
+      }
+    }
+    .ant-pagination-item-active {
+      background-color: @primary-color;
+      a {
+        color: #fff;
+      }
+    }
+    .ant-pagination-next { }
+    .ant-pagination-options-size-changer .ant-select-selection--single {
+      border-radius:4px;
+      border:1px solid rgba(232,235,240,1);
+    }
+    .ant-pagination-options-quick-jumper {
+      input {
+        border-radius:4px;
+        border:1px solid rgba(232,235,240,1);
+      }
+    }
+    .ant-pagination-options-size-changer .ant-select-selection--single:focus,
+    .ant-pagination-options-quick-jumper input:focus  {
+      box-shadow: none;
+    }
+  }
+}
